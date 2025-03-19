@@ -2,6 +2,9 @@
 
 This project uses KQL to detect potential brute-force activity in AzureActivity logs, identifying high-frequency callers and analyzing full records.
 
+## Visualizations
+![Brute-Force Attempts Bar Chart](/brute-force-chart.png)
+Bar chart of failed login attempts by user, highlighting a peak of 200 fails from one incident (March 17, 2025).
 ## Query
 ```kql
 let HighActivityCallers = AzureActivity
